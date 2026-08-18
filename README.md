@@ -14,7 +14,7 @@ The project uses Python, Scikit-learn, and Flask to develop a simple Machine Lea
 - Train a Machine Learning classification model
 - Predict the likely match winner
 - Develop a simple Flask web application
-
+ 
 🛠️ Technologies Used
 
 - Python
