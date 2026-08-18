@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IPL Match Winner Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
 
+<div class="container">
+
+    <h1>IPL Match Winner Prediction</h1>
+
+    <form action="/predict" method="POST">
+
+        <label>Team 1</label><br>
+        <select name="team1" required>
+            <option>Chennai Super Kings</option>
+            <option>Mumbai Indians</option>
+            <option>Royal Challengers Bengaluru</option>
+            <option>Kolkata Knight Riders</option>
+            <option>Delhi Capitals</option>
+            <option>Rajasthan Royals</option>
+            <option>Sunrisers Hyderabad</option>
+            <option>Punjab Kings</option>
+            <option>Lucknow Super Giants</option>
+            <option>Gujarat Titans</option>
+        </select>
+
+        <br><br>
+
+        <label>Team 2</label><br>
+        <select name="team2" required>
+            <option>Chennai Super Kings</option>
+            <option>Mumbai Indians</option>
+            <option>Royal Challengers Bengaluru</option>
+            <option>Kolkata Knight Riders</option>
+            <option>Delhi Capitals</option>
+            <option>Rajasthan Royals</option>
+            <option>Sunrisers Hyderabad</option>
+            <option>Punjab Kings</option>
+            <option>Lucknow Super Giants</option>
+            <option>Gujarat Titans</option>
+        </select>
+
+        <br><br>
+
+        <label>Venue</label><br>
+        <input type="text" name="venue" required>
+
+        <br><br>
+
+        <label>City</label><br>
+        <input type="text" name="city" required>
+
+        <br><br>
+
+        <label>Toss Winner</label><br>
+        <select name="toss_winner" required>
+            <option>Chennai Super Kings</option>
+            <option>Mumbai Indians</option>
+            <option>Royal Challengers Bengaluru</option>
+            <option>Kolkata Knight Riders</option>
+            <option>Delhi Capitals</option>
+            <option>Rajasthan Royals</option>
+            <option>Sunrisers Hyderabad</option>
+            <option>Punjab Kings</option>
+            <option>Lucknow Super Giants</option>
+            <option>Gujarat Titans</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Predict Winner</button>
+
+    </form>
+
+    <h2>{{ prediction_text }}</h2>
+
+</div>
+
+</body>
+</html>
